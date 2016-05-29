@@ -1,0 +1,107 @@
+@import "compass/css3";
+
+/* =============== variable =============== */
+$pad_screen: 768px;
+$desktop_screen: 992px;
+$bigger_screen: 1200px;
+
+$web_font_type: '微軟正黑體', Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+$web_font_size: 16px;
+
+$colro01: #fff;
+$colro02: #fff;
+$colro03: #fff;
+
+/* =============== RWD Mixin =============== */
+@mixin pad_below {
+  @media screen and (max-width: ($pad_screen - 1px)) {
+      @content;
+  }
+}
+@mixin pad_under{
+  @media screen and (min-width: $pad_screen) {
+    @content;
+  }
+}
+@mixin desktop_under{
+  @media screen and (min-width: $desktop_screen) {
+    @content;
+  }
+}
+@mixin bigger_under{
+  @media screen and (min-width: $bigger_screen) {
+    @content;
+  }
+}
+
+
+/* =============== 網頁全域 =============== */
+* {
+  box-sizing: border-box;
+  font-family: $web_font_type;
+}
+body {
+  font-size: $web_font_size;
+  line-height: 24px;
+  a {
+    text-decoration: none;
+  }
+}
+
+// 排版
+.container-flu {
+  width: 100%;
+  margin: 0 auto;
+  *:after {
+    content: ' ';
+    display: table;
+    clear: both;
+  }
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  @include pad_below {
+    width: 100%;
+  }
+}
+.row {
+  padding: 15px 0;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+//清除浮動 & RWD
+.container-flu,
+.container,
+.row {
+  *:after {
+    content: ' ';
+    display: table;
+    clear: both;
+  }
+}
+// 1/4, 3/4, 1/2, 1/3
+.col-quarter,
+.col-three-quarter,
+.col-half,
+.col-oneThree {
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
+  // 767px
+  @include pad_below {
+    width: 100%;
+  }
+}
+.col-quarter {
+  width: 25%;
+}
+.col-three-quarter {
+  width: 75%;
+}
+.col-half {
+  width: 50%;
+}
+.col-oneThree {
+  width: 33.3333333333%;
+}

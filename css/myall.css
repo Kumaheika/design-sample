@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* =============== variable =============== */
+/* =============== RWD Mixin =============== */
+/* =============== 網頁全域 =============== */
+/* line 39, ../sass/myall.scss */
+* {
+  box-sizing: border-box;
+  font-family: "微軟正黑體", Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+/* line 43, ../sass/myall.scss */
+body {
+  font-size: 16px;
+  line-height: 24px;
+}
+/* line 46, ../sass/myall.scss */
+body a {
+  text-decoration: none;
+}
+
+/* line 52, ../sass/myall.scss */
+.container-flu {
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 55, ../sass/myall.scss */
+.container-flu *:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+/* line 61, ../sass/myall.scss */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  /* line 61, ../sass/myall.scss */
+  .container {
+    width: 100%;
+  }
+}
+
+/* line 68, ../sass/myall.scss */
+.row {
+  padding: 15px 0;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+/* line 77, ../sass/myall.scss */
+.container-flu *:after,
+.container *:after,
+.row *:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+/* line 84, ../sass/myall.scss */
+.col-quarter,
+.col-three-quarter,
+.col-half,
+.col-oneThree {
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+@media screen and (max-width: 767px) {
+  /* line 84, ../sass/myall.scss */
+  .col-quarter,
+  .col-three-quarter,
+  .col-half,
+  .col-oneThree {
+    width: 100%;
+  }
+}
+
+/* line 96, ../sass/myall.scss */
+.col-quarter {
+  width: 25%;
+}
+
+/* line 99, ../sass/myall.scss */
+.col-three-quarter {
+  width: 75%;
+}
+
+/* line 102, ../sass/myall.scss */
+.col-half {
+  width: 50%;
+}
+
+/* line 105, ../sass/myall.scss */
+.col-oneThree {
+  width: 33.3333333333%;
+}

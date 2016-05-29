@@ -1,0 +1,173 @@
+@import "compass/css3";
+
+/* =============== Mixin =================*/
+//RWD-平板尺寸
+@mixin pad_below {
+  @media screen and (max-width: 767px) {
+      @content;
+  }
+}
+@mixin pad_under {
+  @media screen and (min-width: 768px) {
+      @content;
+  }
+}
+@mixin desktop_under {
+  @media screen and (min-width: 992px) {
+      @content;
+  }
+}
+@mixin bigger_under {
+  @media screen and (min-width: 1200px) {
+      @content;
+  }
+}
+
+//變數-全域
+$web_fontsize: 16px;
+$Card_bdr: 8px;
+$Cadr_pad: 4px;
+$web_font: '微軟正黑體', Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+$colro01: #12253b;
+$colro02: #fff;
+$colro03: #fff;
+
+//row 的上下 padding
+$rowPadfingTb: 3em;
+
+//上方 Nav padding 距離
+$Nav_toppadding: 70px;
+
+//Slide Show 高度 / 照片路徑
+$slideHeight: 400px;
+$slideimg01: "../images/slideshow_01.jpg";
+$slideimg02: "../images/headeImg_01.jpg";
+$slideimg03: "../images/slideshow_01.jpg";
+
+// bootstrap 全域 修改
+* {
+  box-sizing: border-box;
+  font-family: $web_font;
+}
+body {
+  font-size: $web_fontsize;
+  padding-top: $Nav_toppadding;
+  padding-bottom: 20px;
+}
+//上方主選單
+.logo {
+  max-height: 50px;
+  margin-top: -5px;
+}
+.navbar {
+  min-height: $Nav_toppadding;
+  // margin-bottom: 0;
+}
+.navbar-nav > li > a {
+  line-height: 40px;
+}
+//Slide Show 部分
+.slide-height {
+  height: $slideHeight;
+  background-size: cover;
+}
+.slide-img_01 {
+  background: url($slideimg01) no-repeat center center;
+}
+.slide-img_02 {
+  background: url($slideimg02) no-repeat center center;
+}
+.slide-img_03 {
+  background: url($slideimg03) no-repeat center center;
+}
+
+//首頁-內頁部分
+.jumbotron {
+  background: #eee url($slideimg02) no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  // background-size: cover;
+
+  height: 600px;
+  @include pad_under {
+    padding: 80px 0;
+  }
+}
+.jumbo-text {
+  color: #fff;
+  // padding: 20px;
+  // background-color: rgba(86, 61, 124, 0.25);
+  h1 {
+    text-shadow: 4px 4px 3px rgba(86, 61, 124, 0.55);
+  }
+}
+
+/* =============== 自定義部分 =================*/
+//返回頂端
+.top {
+  width: 40px;
+  height: 40px;
+  background: $colro01;
+  text-align: center;
+  line-height: 40px;
+  &:after {
+    content: "^";
+    display: table-cell;
+
+  }
+}
+//row 用的上下 padding
+.pading_tb {
+  padding: $rowPadfingTb 0;
+}
+//上方 nav Mobile版本兼具調整
+.pad_margin {
+  @include pad_below {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+//h1~h5 用的 margin
+.textTitle_m {
+  margin-top: 10px;
+  margin-bottom: $web_fontsize*2;
+}
+//文章中的圖片檔案 上下 padding
+.img-area {
+  padding: $web_fontsize*2 0;
+}
+
+//自定義卡片式
+.card {
+  display: block;
+  min-height: 300px;
+  text-align: center;
+  background: #FFF;
+  border: 1px solid #ddd;
+  border-radius: $Card_bdr;
+  padding: $Cadr_pad;
+  margin-bottom: 20px;
+  .card-img {
+    // max-height: 150px;
+    height: auto;;
+    margin: (-$Cadr_pad) (-$Cadr_pad) 0 (-$Cadr_pad);
+    border-radius: $Card_bdr $Card_bdr 0 0;
+    overflow: hidden;
+    & img {
+      display: block;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+  .card-content {
+    padding: $Cadr_pad;
+  }
+}
+//卡片式按鈕 上下 padding
+.card-btn-area {
+  padding: $web_fontsize 0;
+}
+//修正 margin-top
+.mt20 {
+  margin-top: 20px;
+}

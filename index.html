@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=devices-width, initial-scale=1"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="Author" content="Newegg">
+  <title>Newegg研討會</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- <link rel="stylesheet" href="css/bootstrap-theme.css"> -->
+  <link rel="stylesheet" href="css/all.css">
+  <script type="text/javascript" src="javascripts/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="javascripts/bootstrap.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.lazyload.min.js"></script>
+  <script type="text/javascript" src="javascripts/index.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-inverse  navbar-fixed-top headroom">
+    <div class="container-fluid">
+      <!-- LOGO -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed pad_margin" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="images/logo_alpha.png" alt="Newegg">
+        </a>
+      </div>
+      <!-- 主選單 -->
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Button</a></li>
+          <li><a href="#" id="gotab01">Button</a></li>
+          <li><a href="#">Button</a></li>
+          <li><a href="#">Button</a></li>
+          <li><a href="#">Button</a></li>
+          <li><a href="#">Button</a></li>
+        </ul>
+        <!-- 右上選單 -->
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Button</a></li>
+          <li><a href="#">Button</a></li>
+          <li><a href="#">Button</a></li>
+          <li><a href="#">Button</a></li>
+        </ul>
+      </div>
+    </div><!-- container-fluid -->
+  </nav><!-- navbar-collapse -->
+
+  <!-- 靜態大圖內容 -->
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 jumbo-text text-center">
+          <h1>Newegg研討會</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos molestias illo enim, veniam omnis earum saepe asperiores adipisci repellat, voluptatum dicta officia voluptatibus animi, dolores vero officiis voluptates laudantium, iste?</p>
+        </div>
+      </div>
+    </div>
+  </div><!-- jumbotron -->
+
+  <!-- slide show -->
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    </ol>
+    <!-- 圖片 -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item slide-height slide-img_01 active">
+        <div class="carousel-caption">
+          <h2>Test Title</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dolorum non aperiam nesciunt consectetur,</p>
+        </div>
+      </div>
+      <div class="item slide-height slide-img_02">
+        <div class="carousel-caption">
+          <h2>Test Title</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dolorum non aperiam nesciunt consectetur,</p>
+        </div>
+      </div>
+      <div class="item slide-height slide-img_03">
+        <!-- <img src="images/slideshow_01.jpg" data-holder-rendered="true"> -->
+        <div class="carousel-caption">
+          <h2>Test Title</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dolorum non aperiam nesciunt consectetur,</p>
+        </div>
+      </div>
+      <div class="item slide-height">
+        <!-- <img src="images/slideshow_01.jpg" data-holder-rendered="true"> -->
+        <div class="carousel-caption">
+          <h2>Test Title</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dolorum non aperiam nesciunt consectetur,</p>
+        </div>
+        <video autoplay loop poster="images/posterimage.jpg">
+          <source src="https://themusicbed.s3.amazonaws.com/site-assets/videos/home-guest.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <!-- control -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div><!-- carousel slide -->
+
+  <!-- Content文案 -->
+  <div class="container">
+    <div class="row pading_tb">
+      <!-- 麵包屑 -->
+      <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Library</a></li>
+        <li class="active">Data</li>
+      </ol>
+
+      <div class="col-md-6 .col-sm-6 tab01">
+        <!-- <img src="..." class="img-responsive" alt="Responsive image"> -->
+        <h2 class="textTitle_m">中文標題測試</h2>
+        <div class="img-area">
+          <!-- <img class="lazy" src="img/g.gif" data-original="images/935c7b98-ca63-477a-ac49-b4bf3d79cab5-w855h425.jpg" width="500" height="333" alt="interior shot #1"> -->
+          <img data-original="images/935c7b98-ca63-477a-ac49-b4bf3d79cab5-w855h425.jpg" alt="title" class="lazy img-responsive">
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dolorum non aperiam nesciunt consectetur,</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, dolorem repellendus, cumque aliquid rem aspernatur. Labore aliquam vitae provident voluptate nam laboriosam. Deserunt nostrum obcaecati, voluptatibus maiores et sint nobis!</p>
+        <blockquote class="mt20">
+          <p>少小離家老大回，鄉音無改鬢毛催。兒童相見不相識，笑問客從何處來。</p>
+          <footer>回鄉偶書，作者：<cite title="Source Title">賀知章</cite></footer>
+        </blockquote>
+      </div>
+      <div class="col-md-6 .col-sm-6">
+        <blockquote class="mt20">
+          <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam adipisci unde veritatis sint laboriosam totam eligendi! Cum officiis, deserunt blanditiis repudiandae modi minima pariatur reiciendis ratione, labore at quibusdam aperiam!</q>
+        </blockquote>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <mark class="lead">consectetur adipisicing elit.</mark>Unde, sint, autem. Voluptatum repudiandae ipsa explicabo doloribus molestiae illum reiciendis veniam. Illum inventore soluta perferendis quisquam debitis aliquam facilis magni sed!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur facilis suscipit provident explicabo porro aperiam quo neque hic cupiditate culpa quia optio nulla tenetur, quidem aspernatur adipisci deserunt perspiciatis quod.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur facilis suscipit provident explicabo porro aperiam quo neque hic cupiditate culpa quia optio nulla tenetur, quidem aspernatur adipisci deserunt perspiciatis quod.</p>
+        <div class="img-area">
+          <img data-original="images/935c7b98-ca63-477a-ac49-b4bf3d79cab5-w855h425.jpg" alt="title" class="lazy img-responsive">
+        </div>
+      </div>
+    </div>
+
+    <!-- bootstrap Card -->
+    <div class="row pading_tb">
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img data-original="images/935c7b98-ca63-477a-ac49-b4bf3d79cab5-w855h425.jpg" alt="thumbnail img" class="lazy">
+            <div class="caption">
+              <h3 class="text-center">卡片式內容</h3>
+              <p>consectetur adipisicing elit. Pariatur facilis suscipit provident explicabo consectetur adipisicing elit. Pariatur facilis suscipit provident explicabo</p>
+              <p class="text-center card-btn-area">
+                <a href="#" class="btn btn-primary" role="button">Button</a>
+                <a href="#" class="btn btn-default" role="button">Button</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img data-original="images/935c7b98-ca63-477a-ac49-b4bf3d79cab5-w855h425.jpg" alt="thumbnail img" class="lazy">
+            <div class="caption">
+              <h3 class="text-center">卡片式內容</h3>
+              <p>consectetur adipisicing elit. Pariatur facilis suscipit provident explicabo consectetur adipisicing elit. Pariatur facilis suscipit provident explicabo</p>
+              <p class="text-center card-btn-area">
+                <a href="#" class="btn btn-primary" role="button">Button</a>
+                <a href="#" class="btn btn-default" role="button">Button</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img data-original="images/935c7b98-ca63-477a-ac49-b4bf3d79cab5-w855h425.jpg" alt="thumbnail img" class="lazy">
+            <div class="caption">
+              <h3 class="text-center">卡片式內容</h3>
+              <p>consectetur adipisicing elit. Pariatur facilis suscipit provident explicabo consectetur adipisicing elit. Pariatur facilis suscipit provident explicabo</p>
+              <p class="text-center card-btn-area">
+                <a href="#" class="btn btn-primary" role="button">Button</a>
+                <a href="#" class="btn btn-default" role="button">Button</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 自定義 Card -->
+    <div class="row pading_tb">
+      <div class="col-sm-6 col-md-4">
+        <div class="card">
+          <div class="card-img">
+            <img data-original="images/935c7b98-ca63-477a-ac49-b4bf3d79cab5-w855h425.jpg" alt="thumbnail img" class="lazy">
+          </div>
+          <div class="card-content">
+            <h3 class="text-center">自定義卡片</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, suscipit ducimus minus dicta eligendi harum ab consequatur magni eos excepturi obcaecati veniam, quod nobis blanditiis. Rerum iste rem impedit nesciunt.</p>
+            <p class="text-center card-btn-area">
+              <a href="#" class="btn btn-primary" role="button">Button</a>
+              <a href="#" class="btn btn-default" role="button">Button</a>
+            </p>
+          </div>
+        </div>
+      </div><!-- col-sm-6 col-md-4 -->
+      <div class="col-sm-6 col-md-4">
+        <div class="card">
+          <div class="card-img">
+            <img data-original="images/935c7b98-ca63-477a-ac49-b4bf3d79cab5-w855h425.jpg" alt="thumbnail img" class="lazy">
+          </div>
+          <div class="card-content">
+            <h3 class="text-center">自定義卡片</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, suscipit ducimus minus dicta eligendi harum ab consequatur magni eos excepturi obcaecati veniam, quod nobis blanditiis. Rerum iste rem impedit nesciunt.</p>
+            <p class="text-center card-btn-area">
+              <a href="#" class="btn btn-primary" role="button">Button</a>
+              <a href="#" class="btn btn-default" role="button">Button</a>
+            </p>
+          </div>
+        </div>
+      </div><!-- col-sm-6 col-md-4 -->
+      <div class="col-sm-6 col-md-4">
+        <div class="card">
+          <div class="card-img">
+            <img data-original="images/935c7b98-ca63-477a-ac49-b4bf3d79cab5-w855h425.jpg" alt="thumbnail img" class="lazy">
+          </div>
+          <div class="card-content">
+            <h3 class="text-center">自定義卡片</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, suscipit ducimus minus dicta eligendi harum ab consequatur magni eos excepturi obcaecati veniam, quod nobis blanditiis. Rerum iste rem impedit nesciunt.</p>
+            <p class="text-center card-btn-area">
+              <a href="#" class="btn btn-primary" role="button">Button</a>
+              <a href="#" class="btn btn-default" role="button">Button</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 自定義 Card -->
+  </div>
+  <!-- Content文案 -->
+
+
+
+
+</body>
+</html>
